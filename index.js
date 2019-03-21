@@ -4,6 +4,6 @@ require("dotenv").config();
 const port = process.env.PORT || 4000;
 const greeting = process.env.GREETING || "Hello";
 
-server.listen(4000, () => {
+server.listen(port, () => {
   console.log(`\n*** ${greeting} http://localhost:${port} ***\n`);
 });
